@@ -1,2 +1,154 @@
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Roboto', sans-serif;
+
+// colors
+$color-green: #53BD99;
+$color-black: #000;
+$color-dark: #05364d;
+$color-gray: #f8f9fa;
+$color-text-gray: #797979;
+$color-light-gray: #f8faff;
+$color-pink: #f36;
+/*
+ *
+ * BASIC SETUP
+ *
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+}
+
+a {
+    outline: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+/*
+ *
+ * HEADING
+ *
+ */
+
+h2,
+h3,
+h4,
+h5 {
+    color: $color-dark;
+}
+
+/*
+ *
+ * REUSEABLE COMPONENTS
+ *
+ */
+
+section {
+    padding: 3.5rem 0;
+}
+
+.little-description {
+    font-size: 15px;
+    color: $color-text-gray;
+    line-height: 27px;
+    font-weight: 300;
+}
+
+/* ---- Header ---- */
+header {
+    position: relative;
+    background: linear-gradient(-135deg, #0071a5bd -10%, #7325d8c5 75%), url(../img/header.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+    .banner-heading {
+        color: #fff;
+        line-height: 150px;
+        margin-bottom: 3rem;
+    }
+
+    .top-bar {
+        a {
+            margin-top: .8rem !important;
+            margin-bottom: .8rem !important;
+            color: #eee !important;
+            // color: black !important;
+            font-size: 1.1rem;
+            border-left: 1px solid rgba(255, 255, 255, 0.288);
+            opacity: .5;
+            transition: all .2s ease-in-out;
+            white-space: nowrap;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.288);
+                opacity: 1;
+            }
+
+            &:first-child {
+                padding-left: 0 !important;
+                border-left: none;
+                opacity: 1;
+
+                &:hover {
+                    background: none;
+                }
+            }
+        }
+    }
+
+    /* Nav Bar */
+    nav {
+        background: rgba(255, 255, 255, 0.116) !important;
+        width: 100%;
+        z-index: 999;
+        // background: $color-green;
+
+        .nav-link {
+            font-size: 14px !important;
+            line-height: 30px;
+            color: #fff !important;
+            transition: all .3s ease-in-out;
+            &:hover{
+                color: $color-dark !important;
+            }
+        }
+    }
+}
+
+/* ---- bottom bar ---- */
+.bottom-bar {
+    position: relative;
+    margin-top: -3%;
+    p,h5{
+        text-align: center !important;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 300;
+        opacity: .7;
+    }
+    .box-shadow {
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+}
