@@ -84,8 +84,8 @@ header {
 
     .banner-heading {
         color: #fff;
-        line-height: 150px;
-        margin-bottom: 3rem;
+        padding: 45px 0;
+        margin-bottom: 4rem;
     }
 
     .top-bar {
@@ -129,6 +129,7 @@ header {
             line-height: 30px;
             color: #fff !important;
             transition: all .3s ease-in-out;
+            margin: 0 5px;
 
             &:hover {
                 color: $color-dark !important;
@@ -140,7 +141,7 @@ header {
 /* ---- bottom bar ---- */
 .bottom-bar {
     position: relative;
-    margin-top: -3%;
+    margin-top: -4%;
 
     p,
     h5 {
