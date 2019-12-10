@@ -127,7 +127,8 @@ header nav .nav-link:hover {
   margin-top: -3%;
 }
 
-.bottom-bar p, .bottom-bar h5 {
+.bottom-bar p,
+.bottom-bar h5 {
   text-align: center !important;
 }
 
