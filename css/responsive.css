@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=responsive.css.map */
+@media screen and (max-width: 500px) {
+  .top-bar .row .col-md-8 {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
