@@ -1,3 +1,13 @@
+@media screen and (max-width: 767px){
+    .ov-item{
+        box-shadow: 0 0 20px rgba(0,0,0,0.07);
+        padding: 30px !important;
+        display: block;
+        p{
+            margin-bottom: 0 !important;
+        }
+    }
+}
 @media screen and (max-width:500px) {
     .top-bar {
         .row {
