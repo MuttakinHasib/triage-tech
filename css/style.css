@@ -105,7 +105,6 @@ section {
 }
 
 header {
-  position: relative;
   background: linear-gradient(-135deg, #0071a5bd -10%, #7325d8c5 75%), url(../img/header.jpg);
   width: 100%;
   background-repeat: no-repeat;
