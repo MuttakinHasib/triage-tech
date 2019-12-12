@@ -8,6 +8,29 @@
   .ov-item p {
     margin-bottom: 0 !important;
   }
+  .tab-link {
+    padding: 10px 20px !important;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .curriculum .curriculum-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .curriculum .curriculum-item .cur-icon {
+    width: 150px;
+    margin-bottom: 25px;
+  }
+  .curriculum .curriculum-item .cur-icon img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 500px) {

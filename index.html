@@ -25,10 +25,10 @@
     <!-- Link for Responsive Style css -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Script tag for jQuery cdn -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 </head>
 
-<body>
+<body id="home">
     <!-- START HEADER AREA -->
 
     <header id="header">
@@ -56,13 +56,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a href="#home" class="nav-link text-uppercase">home</a></li>
-                        <li class="nav-item"><a href="#program" class="nav-link text-uppercase">program</a></li>
-                        <li class="nav-item"><a href="#curriculum" class="nav-link text-uppercase">curriculum</a></li>
-                        <li class="nav-item"><a href="#career" class="nav-link text-uppercase">career</a></li>
-                        <li class="nav-item"><a href="#insturctor" class="nav-link text-uppercase">instructor</a></li>
-                        <li class="nav-item"><a href="#tuition" class="nav-link text-uppercase">tuition</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link text-uppercase">contact</a></li>
+                        <li class="nav-item"><a href="#home" class="scroll nav-link text-uppercase">home</a></li>
+                        <li class="nav-item"><a href="#program" class="scroll nav-link text-uppercase">program</a></li>
+                        <li class="nav-item"><a href="#curriculum" class="scroll nav-link text-uppercase">curriculum</a>
+                        </li>
+                        <li class="nav-item"><a href="#career" class="scroll nav-link text-uppercase">career</a></li>
+                        <li class="nav-item"><a href="#insturctor" class="scroll nav-link text-uppercase">instructor</a>
+                        </li>
+                        <li class="nav-item"><a href="#tuition" class="scroll nav-link text-uppercase">tuition</a></li>
+                        <li class="nav-item"><a href="#contact" class="scroll nav-link text-uppercase">contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -102,7 +104,7 @@
 
     <!-- START OVERVIEW SECTION -->
 
-    <section class="overview">
+    <section class="overview" id="overview">
         <div class="container">
             <div class="row mb-5 justify-content-start">
                 <div class="col-md-12">
@@ -137,7 +139,9 @@
                         </div>
                         <div class="ov-des">
                             <h4>Exceptional Training</h4>
-                            <p class="little-description">Our 18-week crash course is the most robust you’ll find, giving our students the added breadth and depth needed to become well-rounded, modern candidates for the job market.</p>
+                            <p class="little-description">Our 18-week crash course is the most robust you’ll find,
+                                giving our students the added breadth and depth needed to become well-rounded, modern
+                                candidates for the job market.</p>
                         </div>
                     </div>
                 </div>
@@ -148,7 +152,10 @@
                         </div>
                         <div class="ov-des">
                             <h4>Access to the Community</h4>
-                            <p class="little-description">Our course will give you access to a network of experienced and successful students, professionals in the related fields, and instructors. Our course gives students an advantage in analyzing and absorbing information from a holistic view.</p>
+                            <p class="little-description">Our course will give you access to a network of experienced
+                                and successful students, professionals in the related fields, and instructors. Our
+                                course gives students an advantage in analyzing and absorbing information from a
+                                holistic view.</p>
                         </div>
                     </div>
                 </div>
@@ -159,17 +166,278 @@
                         </div>
                         <div class="ov-des">
                             <h4>Professional Instructors</h4>
-                            <p class="little-description">Our instructors are working professionals and will provide hands-on training to give you a visualization of the real life work environment.You will learn the theoretical and practical experience needed for your career.</p>
+                            <p class="little-description">Our instructors are working professionals and will provide
+                                hands-on training to give you a visualization of the real life work environment.You will
+                                learn the theoretical and practical experience needed for your career.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section style="height: 1000px;"></section>
     <!-- END OVERVIEW SECTION -->
 
+    <!-- START CURRICULUM SECTION -->
+
+    <section class="curriculum" id="curriculum">
+        <div class="container">
+            <div class="row mb-5 justify-content-start">
+                <div class="col-md-12">
+                    <p class="text-uppercase top-text">CURRICULUM EXPERIENCE<span></span></p>
+                    <h2 class="pb-3">Become a professional Quality Analyst or Business Analyst</h2>
+                    <p class="little-description">Being a software engineer requires more than knowing how to code or
+                        build a web app. Over 15 intense weeks on Flatiron School’s NYC campus, students learn to think,
+                        and build, like software engineers — from developing coding mastery to gaining an understanding
+                        of how products are designed and managed. In each three-week curriculum module, students develop
+                        key skills through interactive labs, lectures, and close collaboration, showcasing progress
+                        through Portfolio Projects.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mb-5">
+                <div class="col-md-12">
+                    <ul class="tab-control d-flex mb-4">
+                        <li class="nav-item"><button class="tab-link" onclick="showPanel(0,'#f36')">Curriculum
+                                Overview</button></li>
+                        <li class="nav-item"><button class="tab-link" onclick="showPanel(1,'#f36')">Computer
+                                101</button></li>
+                        <li class="nav-item"><button class="tab-link" onclick="showPanel(2,'#f36')">Quality
+                                Analyst</button></li>
+                        <li class="nav-item"><button class="tab-link" onclick="showPanel(3,'#f36')">Business
+                                Analyst</button></li>
+                        <li class="nav-item"><button class="tab-link" onclick="showPanel(4,'#f36')">Market
+                                Analyst</button></li>
+                    </ul>
+                    <!-- <div class="text-center">
+                        <h4>Week</h4>
+                    </div> -->
+                </div>
+            </div>
+            <!-- curriculum overview -->
+            <div class="tab-content cur-ovr">
+                <div class="row justify-content-start align-items-center mb-4">
+                    <div class="col-md-12">
+                        <h5 class="font-weight-light">Students see what goes into managing product teams, learn how to
+                            plan design sprints, and study prototyping and agile project management techniques</h5>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-6 my-3">
+                        <div class="curriculum-item d-flex justify-content-between align-items-center">
+                            <div class="cur-icon">
+                                <img src="img/edit.png" alt="Documentation">
+                            </div>
+                            <div class="cur-des">
+                                <h5>Chapter 1: SDLC & Documentation</h5>
+                                <p class="little-description">Know the ins and outs on how software is planned, built,
+                                    and sent for deployment. The perfect guide to learning the who, what, and the how.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div class="curriculum-item d-flex justify-content-between align-items-center">
+                            <div class="cur-icon">
+                                <img src="img/database.png" alt="Database">
+                            </div>
+                            <div class="cur-des">
+                                <h5>Chapter 2: Databases</h5>
+                                <p class="little-description">Learn how to analyze and manipulate data using SQL
+                                    (Structured Query Language). No experiences needed, the instructors will take a
+                                    beginner and make them into a pro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div class="curriculum-item d-flex justify-content-between align-items-center">
+                            <div class="cur-icon">
+                                <img src="img/javascript.png" alt="Javascript">
+                            </div>
+                            <div class="cur-des">
+                                <h5>Chapter 3 : JavaScript</h5>
+                                <p class="little-description">No background in knowing how coding works? No problem,
+                                    students will have the opportunity to master the fundamentals of scripting and
+                                    programming.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div class="curriculum-item d-flex justify-content-between align-items-center">
+                            <div class="cur-icon">
+                                <img src="img/business.png" alt="Business">
+                            </div>
+                            <div class="cur-des">
+                                <h5>Chapter 4: Business Analysis</h5>
+                                <p class="little-description">Absorb the information needed to learn how the business
+                                    works and how software finds the appropriate solution for implementation. Become a
+                                    master analyst.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="cur-info">
+                            <h4>Student Milestones</h4>
+                            <p class="little-description">
+                                Each chapter consists of various assignment. Students are to complete them for
+                                self-evaluationin order to demonstrate their progress.If you are doing the course
+                                online,
+                                you are to do one-on-one sessions after each chapter. Students work in teams and
+                                directly
+                                with the instructors to ensure they’ve mastered key concepts before progressing. If
+                                students
+                                need additional support, they receive additional direct mentorship, and, if necessary,
+                                they’ll have the opportunity to repeat the course at no extra cost for the 2nd time
+                                around.
+                                Upon completion of each chapter, students are to check off the topics from their Student
+                                Milestones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center mt-5">
+                    <div class="col-md-6 text-center">
+                        <a href="#" class="btn btn-primary">View Full Brochure</a>
+                    </div>
+                </div>
+            </div>
+            <!-- computer -->
+            <div class="tab-content computer">
+                <div class="row justify-content-start align-items-center mb-4">
+                    <div class="col-md-12">
+                        <h5 class="font-weight-light">Excellence requires mastery of deep technical topics. In our final
+                            module, students choose one specific technology to concentrate on, building a project using
+                            the most advanced tools available in that discipline. While our full-stack curriculum is a
+                            powerful start, the depth of understanding gained through these elected concentrations
+                            allows students to rise far above the bar.</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 my-3">
+                        <div class="curriculum-item d-flex justify-content-between align-items-center">
+                            <div class="cur-icon">
+                                <img src="img/server.png" alt="server">
+                            </div>
+                            <div class="cur-des">
+                                <h5>The Basics</h5>
+                                <p class="little-description">New to technology? No problem, our course is designed to
+                                    fit an individual from any background and transform them into a technical
+                                    professional.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div class="curriculum-item d-flex justify-content-between align-items-center">
+                            <div class="cur-icon">
+                                <img src="img/software.png" alt="software">
+                            </div>
+                            <div class="cur-des">
+                                <h5>Hardware & Software</h5>
+                                <p class="little-description">Learn every piece of the machine. From the parts that are
+                                    used to make it, to the servers that connect everything together.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div class="curriculum-item d-flex justify-content-between align-items-center">
+                            <div class="cur-icon">
+                                <img src="img/html-5.png" alt="html">
+                            </div>
+                            <div class="cur-des">
+                                <h5>Binary Code & HTML</h5>
+                                <p class="little-description">Get the opportunity to learn how the MATRIX works. Learn
+                                    how front-end development works by making your own website.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div class="curriculum-item d-flex justify-content-between align-items-center">
+                            <div class="cur-icon">
+                                <img src="img/business.png" alt="Business">
+                            </div>
+                            <div class="cur-des">
+                                <h5>Intro to MS Office</h5>
+                                <p class="little-description">Become a Word, Excel, Project, & Outlook wizard. Our
+                                    course will make sure you know the basics before moving to the advanced.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center mt-5">
+                    <div class="col-md-6 text-center">
+                        <a href="#" class="btn btn-primary">View Full Brochure</a>
+                    </div>
+                </div>
+            </div>
+            <!-- quality analyst -->
+            <div class="tab-content quality">
+                <div class="row justify-content-start align-items-center mb-4">
+                    <div class="col-md-12">
+                        <h5 class="font-weight-light">No piece of software is built by one person. Our Product Series gives students a chance to look beyond the command line to see how code fits into a larger product or organization. Throughout this speaker series, students hear from the best entrepreneurs and builders in NYC to learn what it takes to go from prototype to product adoption.</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 my-3">
+                        <div class="curriculum-item d-flex justify-content-between align-items-center">
+                            <div class="cur-icon">
+                                <img src="img/edit.png" alt="Documentation">
+                            </div>
+                            <div class="cur-des">
+                                <h5>SDLC & Documentation</h5>
+                                <p class="little-description">Know the ins and outs on how software is planned, built, and sent for deployment. The perfect guide to learning the who, what, and the how.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div class="curriculum-item d-flex justify-content-between align-items-center">
+                            <div class="cur-icon">
+                                <img src="img/test.png" alt="test">
+                            </div>
+                            <div class="cur-des">
+                                <h5>Manual Testing</h5>
+                                <p class="little-description">Master the fundamentals in becoming a software tester. Everything you need and will do: test planning, test scenarios, test execution, and reporting.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div class="curriculum-item d-flex justify-content-between align-items-center">
+                            <div class="cur-icon">
+                                <img src="img/database.png" alt="database">
+                            </div>
+                            <div class="cur-des">
+                                <h5>Databases</h5>
+                                <p class="little-description">Learn how to analyze and manipulate data using SQL (Structured Query Language). No experiences needed, the instructors will take a beginner and make them into a pro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div class="curriculum-item d-flex justify-content-between align-items-center">
+                            <div class="cur-icon">
+                                <img src="img/home-automation.png" alt="home-automation">
+                            </div>
+                            <div class="cur-des">
+                                <h5>Automation</h5>
+                                <p class="little-description">No background in knowing how coding works? No problem, students will have the opportunity to master the fundamentals of scripting and programming.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center mt-5">
+                    <div class="col-md-6 text-center">
+                        <a href="#" class="btn btn-primary">View Full Brochure</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END CURRICULUM SECTION -->
+
+
+
+    <section style="height: 1000px;"></section>
     <!-- All js plugin -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/html5shiv.min.js"></script>

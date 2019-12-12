@@ -1,13 +1,37 @@
-@media screen and (max-width: 767px){
-    .ov-item{
-        box-shadow: 0 0 20px rgba(0,0,0,0.07);
+@media screen and (max-width: 767px) {
+    .ov-item {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
         padding: 30px !important;
         display: block;
-        p{
+
+        p {
             margin-bottom: 0 !important;
         }
     }
+
+    .tab-link {
+        padding: 10px 20px !important;
+        margin-bottom: 10px;
+    }
 }
+
+@media screen and (max-width:600px) {
+    .curriculum {
+        .curriculum-item {
+            flex-direction: column;
+            align-items: flex-start !important;
+            .cur-icon {
+                width: 150px;
+                margin-bottom: 25px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width:500px) {
     .top-bar {
         .row {

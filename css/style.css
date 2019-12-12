@@ -61,6 +61,27 @@ section {
   padding: 3.5rem 0;
 }
 
+.top-text {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  color: #797979;
+}
+
+.top-text span {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: inline-block;
+  width: 100px;
+  margin-left: 15px;
+  height: 2px;
+  background: #f36;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
 .little-description {
   font-size: 15px;
   color: #797979;
@@ -204,12 +225,98 @@ header nav .nav-link:hover {
 }
 
 .overview .ov-item .ov-icon {
-  text-align: center;
   width: 100px;
   margin-bottom: 25px;
 }
 
 .overview .ov-item .ov-icon img {
   width: 100%;
+}
+
+/* ---- CURRICULUM ---- */
+.curriculum {
+  background: #f8f9fa;
+}
+
+.curriculum .computer .cur-icon {
+  width: 400px;
+  margin-right: 25px;
+}
+
+.curriculum .computer .cur-icon img {
+  width: 100%;
+}
+
+.curriculum .cur-ovr .cur-icon {
+  width: 450px;
+  margin-right: 25px;
+}
+
+.curriculum .cur-ovr .cur-icon img {
+  width: 100%;
+}
+
+.curriculum .quality .cur-icon {
+  width: 450px;
+  margin-right: 25px;
+}
+
+.curriculum .quality .cur-icon img {
+  width: 100%;
+}
+
+.curriculum .tab-control {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.curriculum .tab-control li .tab-link {
+  background: none;
+  border: none;
+  color: #05364d;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 50px;
+  padding-bottom: 20px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.curriculum .tab-control li .tab-link:focus {
+  outline: none;
+}
+
+.curriculum .tab-content {
+  display: none;
+}
+
+.curriculum .curriculum-item {
+  padding: 20px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.curriculum .curriculum-item:hover {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.curriculum .cur-info {
+  background: #fff;
+  padding: 35px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.curriculum .cur-info p {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

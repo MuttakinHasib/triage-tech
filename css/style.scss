@@ -40,14 +40,17 @@ a {
         text-decoration: none;
     }
 }
-.navbar-toggler{
+
+.navbar-toggler {
     border: none !important;
-    span{
+
+    span {
         color: $color-dark;
         font-size: 20px;
         font-weight: bold;
     }
 }
+
 /*
  *
  * HEADING
@@ -69,6 +72,25 @@ h5 {
 
 section {
     padding: 3.5rem 0;
+}
+
+.top-text {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-text-gray;
+
+    span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+        width: 100px;
+        margin-left: 15px;
+        height: 2px;
+        background: $color-pink;
+        filter: blur(4px);
+    }
 }
 
 .little-description {
@@ -207,15 +229,103 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
         // align-items: center;
         .ov-icon {
-            text-align: center;
             width: 100px;
             margin-bottom: 25px;
 
             img {
                 width: 100%;
             }
+        }
+    }
+}
+
+/* ---- CURRICULUM ---- */
+
+.curriculum {
+    background: $color-gray;
+
+    .computer {
+        .cur-icon {
+            width: 400px;
+            margin-right: 25px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .cur-ovr {
+        .cur-icon {
+            width: 450px;
+            margin-right: 25px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .quality {
+        .cur-icon {
+            width: 450px;
+            margin-right: 25px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .tab-control {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        li {
+            .tab-link {
+                background: none;
+                border: none;
+                color: $color-dark;
+                border-bottom: 1px solid #ddd;
+                padding: 10px 50px;
+                padding-bottom: 20px;
+                transition: all .2s ease-in-out;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        display: none;
+    }
+
+    .curriculum-item {
+        padding: 20px;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+
+    }
+
+    .cur-info {
+        background: #fff;
+        padding: 35px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+
+        p {
+            margin-bottom: 0;
         }
     }
 }
