@@ -99,7 +99,30 @@ section {
     line-height: 27px;
     font-weight: 300;
 }
+.tab-control {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
+    li {
+        .tab-link {
+            background: none;
+            border: none;
+            color: $color-dark;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 50px;
+            padding-bottom: 20px;
+            transition: all .2s ease-in-out;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
 /* ---- Header ---- */
 .header-active {
     position: fixed;
@@ -258,17 +281,7 @@ header {
         }
     }
 
-    .cur-ovr {
-        .cur-icon {
-            width: 450px;
-            margin-right: 25px;
-
-            img {
-                width: 100%;
-            }
-        }
-    }
-    .quality {
+    .cur-ovr,.quality,.business,.marketing {
         .cur-icon {
             width: 450px;
             margin-right: 25px;
@@ -327,5 +340,20 @@ header {
         p {
             margin-bottom: 0;
         }
+    }
+}
+
+/* ---- CEO ---- */
+
+.ceo-msg{
+    width: 100%;
+    background: linear-gradient(to right,#05364dcb,#05364dc0),url(../img/education.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    h5,p,small{
+        color: #fff;
     }
 }

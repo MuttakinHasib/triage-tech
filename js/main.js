@@ -26,20 +26,34 @@ $(document).ready(function() {
 });
 
 // Tab Panel
-const tabLink = document.querySelectorAll(".tab-link");
-const tabContent = document.querySelectorAll(".tab-content");
-
+const curriculumTabLink = document.querySelectorAll(".curriculum-tab .tab-link");
+const curriculumTabContent = document.querySelectorAll(".curriculum-content .tab-content");
+const toolsTabLink = document.querySelectorAll(".tools-tab .tab-link");
+const toolsTabContent = document.querySelectorAll(".tools-content .tab-content");
 function showPanel(index, color) {
-    tabLink.forEach(item => {
+    curriculumTabLink.forEach(item => {
         item.style.color = "";
         item.style.borderBottomColor = "";
     });
-    tabContent.forEach(item => {
+    curriculumTabContent.forEach(item => {
         item.style.display = "none";
     });
-    tabLink[index].style.color = color;
-    tabLink[index].style.borderBottomColor = color;
-    tabContent[index].style.display = "block";
+    curriculumTabLink[index].style.color = color;
+    curriculumTabLink[index].style.borderBottomColor = color;
+    curriculumTabContent[index].style.display = "block";
 }
 
+function showToolsPanel(index,color){
+    toolsTabLink.forEach(item => {
+        item.style.color = "";
+        item.style.borderBottomColor = "";
+    });
+    toolsTabContent.forEach(item => {
+        item.style.display = "none";
+    });
+    toolsTabLink[index].style.color = color;
+    toolsTabLink[index].style.borderBottomColor = color;
+    toolsTabContent[index].style.display = "block";
+}
 showPanel(0,'#f36');
+showToolsPanel(0,'#f36');

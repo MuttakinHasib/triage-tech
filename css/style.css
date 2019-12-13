@@ -89,6 +89,35 @@ section {
   font-weight: 300;
 }
 
+.tab-control {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tab-control li .tab-link {
+  background: none;
+  border: none;
+  color: #05364d;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 50px;
+  padding-bottom: 20px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.tab-control li .tab-link:focus {
+  outline: none;
+}
+
 /* ---- Header ---- */
 .header-active {
   position: fixed;
@@ -247,21 +276,12 @@ header nav .nav-link:hover {
   width: 100%;
 }
 
-.curriculum .cur-ovr .cur-icon {
+.curriculum .cur-ovr .cur-icon, .curriculum .quality .cur-icon, .curriculum .business .cur-icon, .curriculum .marketing .cur-icon {
   width: 450px;
   margin-right: 25px;
 }
 
-.curriculum .cur-ovr .cur-icon img {
-  width: 100%;
-}
-
-.curriculum .quality .cur-icon {
-  width: 450px;
-  margin-right: 25px;
-}
-
-.curriculum .quality .cur-icon img {
+.curriculum .cur-ovr .cur-icon img, .curriculum .quality .cur-icon img, .curriculum .business .cur-icon img, .curriculum .marketing .cur-icon img {
   width: 100%;
 }
 
@@ -318,5 +338,21 @@ header nav .nav-link:hover {
 
 .curriculum .cur-info p {
   margin-bottom: 0;
+}
+
+/* ---- CEO ---- */
+.ceo-msg {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#05364dcb), to(#05364dc0)), url(../img/education.jpg);
+  background: linear-gradient(to right, #05364dcb, #05364dc0), url(../img/education.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.ceo-msg h5, .ceo-msg p, .ceo-msg small {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
