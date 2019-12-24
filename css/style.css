@@ -110,8 +110,8 @@ section {
   border-bottom: 1px solid #ddd;
   padding: 10px 50px;
   padding-bottom: 20px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .tab-control li .tab-link:focus {
@@ -146,8 +146,8 @@ section {
 
 .header-active .nav-link {
   color: #05364d !important;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .header-active .nav-link:hover {
@@ -171,14 +171,14 @@ header .banner-heading {
 }
 
 header .top-bar a {
-  margin-top: .8rem !important;
-  margin-bottom: .8rem !important;
+  margin-top: 0.8rem !important;
+  margin-bottom: 0.8rem !important;
   color: #eee !important;
   font-size: 1.1rem;
   border-left: 1px solid rgba(255, 255, 255, 0.288);
-  opacity: .5;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   white-space: nowrap;
 }
 
@@ -207,8 +207,8 @@ header nav .nav-link {
   font-size: 14px !important;
   line-height: 30px;
   color: #fff !important;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   margin: 0 5px;
 }
 
@@ -230,7 +230,7 @@ header nav .nav-link:hover {
 .bottom-bar p {
   font-size: 20px;
   font-weight: 300;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .bottom-bar .box-shadow {
@@ -276,12 +276,18 @@ header nav .nav-link:hover {
   width: 100%;
 }
 
-.curriculum .cur-ovr .cur-icon, .curriculum .quality .cur-icon, .curriculum .business .cur-icon, .curriculum .marketing .cur-icon {
+.curriculum .cur-ovr .cur-icon,
+.curriculum .quality .cur-icon,
+.curriculum .business .cur-icon,
+.curriculum .marketing .cur-icon {
   width: 450px;
   margin-right: 25px;
 }
 
-.curriculum .cur-ovr .cur-icon img, .curriculum .quality .cur-icon img, .curriculum .business .cur-icon img, .curriculum .marketing .cur-icon img {
+.curriculum .cur-ovr .cur-icon img,
+.curriculum .quality .cur-icon img,
+.curriculum .business .cur-icon img,
+.curriculum .marketing .cur-icon img {
   width: 100%;
 }
 
@@ -306,8 +312,8 @@ header nav .nav-link:hover {
   border-bottom: 1px solid #ddd;
   padding: 10px 50px;
   padding-bottom: 20px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .curriculum .tab-control li .tab-link:focus {
@@ -320,8 +326,8 @@ header nav .nav-link:hover {
 
 .curriculum .curriculum-item {
   padding: 20px;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .curriculum .curriculum-item:hover {
@@ -352,7 +358,79 @@ header nav .nav-link:hover {
   color: #fff;
 }
 
-.ceo-msg h5, .ceo-msg p, .ceo-msg small {
+.ceo-msg h5,
+.ceo-msg p,
+.ceo-msg small {
   color: #fff;
+}
+
+/* ---- tools ---- */
+.tools-content .tools-item {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.085);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.085);
+  transition: all 0.3s ease-in-out;
+}
+
+.tools-content .tools-item:hover .tools-img::before {
+  width: 100%;
+}
+
+.tools-content .tools-item .tools-img {
+  overflow: hidden;
+  position: relative;
+}
+
+.tools-content .tools-item .tools-img::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 0;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.tools-content .tools-item:hover {
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ---- career ---- */
+/* .career{
+    .career-single-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .icon{
+            width: 350px;
+            margin-right: 25px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+} */
+/* ---- Instructors ---- */
+.instructor {
+  background: -webkit-gradient(linear, left top, right top, from(#05364dda), to(#05364dd8)), url(../img/instructor.jpg);
+  background: linear-gradient(to right, #05364dda, #05364dd8), url(../img/instructor.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.instructor p {
+  color: #fff;
+}
+
+.instructor h2 {
+  color: #f56;
 }
 /*# sourceMappingURL=style.css.map */
