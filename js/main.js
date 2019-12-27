@@ -6,6 +6,20 @@ $(window).scroll(function() {
   } else {
     $("nav").removeClass("header-active");
   }
+
+  // Scroll Top Bar
+
+  if (winScroll >= 300) {
+    $(".scroll-bar").css({
+      opacity: "1",
+      visibility: "visible",
+      pointerEvents: "all"
+    });
+
+    $(".scroll-bar").fadeIn("slow");
+  } else {
+    $(".scroll-bar").fadeOut("slow");
+  }
 });
 
 $(document).ready(function() {
