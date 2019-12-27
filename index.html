@@ -19,7 +19,9 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <!-- Link for icon cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.min.css">
-    <script src="https://kit.fontawesome.com/eca179abd1.js" crossorigin="anonymous"></script>
+    <!-- Link for font-awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
     <!-- Link for Style css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Link for Responsive Style css -->
@@ -28,7 +30,7 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 </head>
 
-<body id="home">
+<body id="home" data-spy="scroll" data-target="#nav" data-offset="150">
     <!-- START HEADER AREA -->
 
     <header id="header">
@@ -46,7 +48,7 @@
         </div>
         <!-- end top bar -->
         <!-- start nav bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
             <div class="container">
                 <a href="#" class="navbar-brand">Triage Tech Co</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -57,13 +59,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a href="#home" class="scroll nav-link text-uppercase">home</a></li>
-                        <li class="nav-item"><a href="#program" class="scroll nav-link text-uppercase">program</a></li>
+                        <!-- <li class="nav-item"><a href="#program" class="scroll nav-link text-uppercase">program</a></li> -->
                         <li class="nav-item"><a href="#curriculum" class="scroll nav-link text-uppercase">curriculum</a>
                         </li>
                         <li class="nav-item"><a href="#career" class="scroll nav-link text-uppercase">career</a></li>
                         <li class="nav-item"><a href="#instructor" class="scroll nav-link text-uppercase">instructor</a>
                         </li>
                         <li class="nav-item"><a href="#tuition" class="scroll nav-link text-uppercase">tuition</a></li>
+                        <li class="nav-item"><a href="#faq" class="scroll nav-link text-uppercase">FAQ</a></li>
                         <li class="nav-item"><a href="#contact" class="scroll nav-link text-uppercase">contact</a></li>
                     </ul>
                 </div>
@@ -667,7 +670,10 @@
                                 </div>
                                 <div class="tools-des">
                                     <h5>Automation (UFT)</h5>
-                                    <p class="little-description">Automating manual work is key in saving time and saving resources. We will start with vbScript, a very easy step by step learning curve to enter the world of automation. Students also get introduced to Selenium with Java (OOP).</p>
+                                    <p class="little-description">Automating manual work is key in saving time and
+                                        saving resources. We will start with vbScript, a very easy step by step learning
+                                        curve to enter the world of automation. Students also get introduced to Selenium
+                                        with Java (OOP).</p>
                                 </div>
                             </div>
                         </div>
@@ -678,7 +684,10 @@
                                 </div>
                                 <div class="tools-des">
                                     <h5>Databases (SQL)</h5>
-                                    <p class="little-description">How to Query the data? Everywhere you look today, you see data all over; and here at ObjectSPY we teach our students the Structured Query Language to make sense of all these data that plays a huge part in the application.</p>
+                                    <p class="little-description">How to Query the data? Everywhere you look today, you
+                                        see data all over; and here at ObjectSPY we teach our students the Structured
+                                        Query Language to make sense of all these data that plays a huge part in the
+                                        application.</p>
                                 </div>
                             </div>
                         </div>
@@ -689,7 +698,10 @@
                                 </div>
                                 <div class="tools-des">
                                     <h5>API (REST / SOAP)</h5>
-                                    <p class="little-description">Whether the API is a restful application that uses XML or JSON, or SOAP-based XML container, test scripts should be built to check response time & accuracy. Students learn the fundamentals and becomes a pro step by step.</p>
+                                    <p class="little-description">Whether the API is a restful application that uses XML
+                                        or JSON, or SOAP-based XML container, test scripts should be built to check
+                                        response time & accuracy. Students learn the fundamentals and becomes a pro step
+                                        by step.</p>
                                 </div>
                             </div>
                         </div>
@@ -711,7 +723,10 @@
                                 </div>
                                 <div class="tools-des">
                                     <h5>Agile (Kanban / Scrum)</h5>
-                                    <p class="little-description">In this industry, there is no more jumping to code and getting to production. To do things efficiently, we start with a better understanding of the Application Lifecycle. Students learn the concept of welcoming & adapting to changes.</p>
+                                    <p class="little-description">In this industry, there is no more jumping to code and
+                                        getting to production. To do things efficiently, we start with a better
+                                        understanding of the Application Lifecycle. Students learn the concept of
+                                        welcoming & adapting to changes.</p>
                                 </div>
                             </div>
                         </div>
@@ -722,7 +737,10 @@
                                 </div>
                                 <div class="tools-des">
                                     <h5>Jira / Rally</h5>
-                                    <p class="little-description">Managing the rapid changes to the requirements and adapting to the first track environment is not so easy without a good ticketing and documenting system. Students learns the best process and masters the industry level tools.</p>
+                                    <p class="little-description">Managing the rapid changes to the requirements and
+                                        adapting to the first track environment is not so easy without a good ticketing
+                                        and documenting system. Students learns the best process and masters the
+                                        industry level tools.</p>
                                 </div>
                             </div>
                         </div>
@@ -733,7 +751,10 @@
                                 </div>
                                 <div class="tools-des">
                                     <h5>DevOps</h5>
-                                    <p class="little-description">From the requirement gathering to analyzing, developing, testing, tracking defects and deploying – it would be difficult to maintain without a proper portal for storage and traceability. Tools like ALM and TFS are your best bet!</p>
+                                    <p class="little-description">From the requirement gathering to analyzing,
+                                        developing, testing, tracking defects and deploying – it would be difficult to
+                                        maintain without a proper portal for storage and traceability. Tools like ALM
+                                        and TFS are your best bet!</p>
                                 </div>
                             </div>
                         </div>
@@ -753,7 +774,9 @@
                 <div class="col-md-12">
                     <p class="text-uppercase top-text">CAREER SERVICES<span></span></p>
                     <h2 class="pb-3">Get a job with our one on one career guidance services</h2>
-                    <p class="little-description">Our students get a job. Our career guidance team works with all of our students to ensure that they are both successful in class and outside of class. Our goal here is to not only give you world class training but also launch you into your new career in tech.</p>
+                    <p class="little-description">Our students get a job. Our career guidance team works with all of our
+                        students to ensure that they are both successful in class and outside of class. Our goal here is
+                        to not only give you world class training but also launch you into your new career in tech.</p>
                 </div>
             </div>
             <div class="row my-3">
@@ -765,7 +788,9 @@
                 <div class="col-md-8">
                     <div class="career-des">
                         <h4>Training-Free Guarantee</h4>
-                        <p class="little-description">Our students can take their step into tech with confidence thanks to our guarantee. If you don't receive a job offer after our course, we won’t charge you for our program – simple as that. (See eligibility terms.)</p>
+                        <p class="little-description">Our students can take their step into tech with confidence thanks
+                            to our guarantee. If you don't receive a job offer after our course, we won’t charge you for
+                            our program – simple as that. (See eligibility terms.)</p>
                     </div>
                 </div>
             </div>
@@ -778,7 +803,9 @@
                 <div class="col-md-8 my-3">
                     <div class="career-des">
                         <h4>Dedicated Career Guidance</h4>
-                        <p class="little-description">Our career counselors mentor our students through all stages of job search and placement. We review resumes, conduct mock interviews, and provide strategies in nailing your interviews.</p>
+                        <p class="little-description">Our career counselors mentor our students through all stages of
+                            job search and placement. We review resumes, conduct mock interviews, and provide strategies
+                            in nailing your interviews.</p>
                     </div>
                 </div>
             </div>
@@ -791,7 +818,10 @@
                 <div class="col-md-8 my-3">
                     <div class="career-des">
                         <h4>Job Search Framework</h4>
-                        <p class="little-description">After years of recruiting, staffing and placements of students and existing professionals, we’ve developed a proven framework for efficiently landing a job right after our class. With our proven methods, all of our students have successfully been hired within 6 months of program completion.</p>
+                        <p class="little-description">After years of recruiting, staffing and placements of students and
+                            existing professionals, we’ve developed a proven framework for efficiently landing a job
+                            right after our class. With our proven methods, all of our students have successfully been
+                            hired within 6 months of program completion.</p>
                     </div>
                 </div>
             </div>
@@ -804,30 +834,30 @@
 
     <div class="brand mb-5">
         <div class="container">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-md-12">
-              <h2 class="m-0">&nbsp;</h2>
-              <div class="brand-img d-flex align-items-center owl-carousel">
-                <div class="single-brand d-table m-auto">
-                  <img src="img/brand-1.png" alt="Brand" />
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-12">
+                    <h2 class="m-0">&nbsp;</h2>
+                    <div class="brand-img d-flex align-items-center owl-carousel">
+                        <div class="single-brand d-table m-auto">
+                            <img src="img/brand-1.png" alt="Brand" />
+                        </div>
+                        <div class="single-brand d-table m-auto">
+                            <img src="img/brand-2.png" alt="Brand" />
+                        </div>
+                        <div class="single-brand d-table m-auto">
+                            <img src="img/brand-3.png" alt="Brand" />
+                        </div>
+                        <div class="single-brand d-table m-auto">
+                            <img src="img/brand-4.png" alt="Brand" />
+                        </div>
+                        <div class="single-brand d-table m-auto">
+                            <img src="img/brand-5.png" alt="Brand" />
+                        </div>
+                    </div>
                 </div>
-                <div class="single-brand d-table m-auto">
-                  <img src="img/brand-2.png" alt="Brand" />
-                </div>
-                <div class="single-brand d-table m-auto">
-                  <img src="img/brand-3.png" alt="Brand" />
-                </div>
-                <div class="single-brand d-table m-auto">
-                  <img src="img/brand-4.png" alt="Brand" />
-                </div>
-                <div class="single-brand d-table m-auto">
-                  <img src="img/brand-5.png" alt="Brand" />
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
 
     <!-- START BRAND SECTION -->
 
@@ -839,8 +869,12 @@
                 <div class="col-md-12">
                     <p class="text-uppercase">Instructors</p>
                     <h2 class="pb-2">Experienced professionals. Passionate teachers.</h2>
-                    <p class="little-description">We strive to ensure all students receive the most robust training on the market. Our experienced professionals go through stringent evaluations to ensure competency in their field and as a teacher. All of our instructors are deeply committed to making every student successful.</p>
-                    <p class="text-right">Teaching technology is not always easy, especially to new comers in the field. our students learn from the best in the industry.</p>
+                    <p class="little-description">We strive to ensure all students receive the most robust training on
+                        the market. Our experienced professionals go through stringent evaluations to ensure competency
+                        in their field and as a teacher. All of our instructors are deeply committed to making every
+                        student successful.</p>
+                    <p class="text-right">Teaching technology is not always easy, especially to new comers in the field.
+                        our students learn from the best in the industry.</p>
                 </div>
             </div>
         </div>
@@ -855,7 +889,9 @@
             <div class="row mb-5 justify-content-start">
                 <div class="col-md-12">
                     <p class="text-uppercase top-text">Admissions<span></span></p>
-                    <p class="little-description">Students come to our program from all types of backgrounds. We curate dynamic classes to ensure all students receive equal attention and support from our staff and their peers.</p>
+                    <p class="little-description">Students come to our program from all types of backgrounds. We curate
+                        dynamic classes to ensure all students receive equal attention and support from our staff and
+                        their peers.</p>
                 </div>
             </div>
             <div class="row">
@@ -870,7 +906,9 @@
                         <div class="col-md-9">
                             <div class="admission-des">
                                 <h5>01. Apply</h5>
-                                <p class="little-description"><a href="#"> Click here</a>&nbsp;to enroll in our program. You can choose a 14 days free trial run with limited access or you can get started right away with full access to all our resources with a paid plan.</p>
+                                <p class="little-description"><a href="#"> Click here</a>&nbsp;to enroll in our program.
+                                    You can choose a 14 days free trial run with limited access or you can get started
+                                    right away with full access to all our resources with a paid plan.</p>
                             </div>
                         </div>
                     </div>
@@ -883,7 +921,10 @@
                         <div class="col-md-9">
                             <div class="admission-des">
                                 <h5>02. Admissions Interview</h5>
-                                <p class="little-description">Once the enrollment application is received and verified, you chat with an EnrollmentAdvisor. This is an opportunity for us to get to know each other a little better. Nothing technical — just a friendly conversation on why your interested and where you see yourself 6 months down the road.</p>
+                                <p class="little-description">Once the enrollment application is received and verified,
+                                    you chat with an EnrollmentAdvisor. This is an opportunity for us to get to know
+                                    each other a little better. Nothing technical — just a friendly conversation on why
+                                    your interested and where you see yourself 6 months down the road.</p>
                             </div>
                         </div>
                     </div>
@@ -896,7 +937,10 @@
                         <div class="col-md-9">
                             <div class="admission-des">
                                 <h5>03. Technical Review</h5>
-                                <p class="little-description">Although technical experience is not required, we do require that students be comfortable with the basics of using a computer, communication and general soft skills. We will review your application and conduct short mock up to ensure that you are a right fit for our program.</p>
+                                <p class="little-description">Although technical experience is not required, we do
+                                    require that students be comfortable with the basics of using a computer,
+                                    communication and general soft skills. We will review your application and conduct
+                                    short mock up to ensure that you are a right fit for our program.</p>
                             </div>
                         </div>
                     </div>
@@ -912,7 +956,9 @@
                         <div class="col-md-9">
                             <div class="admission-des">
                                 <h5>Passion</h5>
-                                <p class="little-description">We are looking for highly motivated people that want to get into a growing field. They are ready to take the next 6 months seriously and have a clear goal in mind.</p>
+                                <p class="little-description">We are looking for highly motivated people that want to
+                                    get into a growing field. They are ready to take the next 6 months seriously and
+                                    have a clear goal in mind.</p>
                             </div>
                         </div>
                     </div>
@@ -925,7 +971,8 @@
                         <div class="col-md-9">
                             <div class="admission-des">
                                 <h5>Aptitude</h5>
-                                <p class="little-description">Having sound analytical and soft skills is key in being an active student and a future professional. </p>
+                                <p class="little-description">Having sound analytical and soft skills is key in being an
+                                    active student and a future professional. </p>
                             </div>
                         </div>
                     </div>
@@ -938,10 +985,50 @@
                         <div class="col-md-9">
                             <div class="admission-des">
                                 <h5>Culture</h5>
-                                <p class="little-description">As the tech field evolves, one thing that has stayed above the curve is the for smart and open-minded individuals. We know what companies are looking for and who they hire.</p>
+                                <p class="little-description">As the tech field evolves, one thing that has stayed above
+                                    the curve is the for smart and open-minded individuals. We know what companies are
+                                    looking for and who they hire.</p>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <h4 class="border-bottom pb-2 border-light">Program Dates</h4>
+                <table class="table bg-white table-hover table-bordered my-3">
+                    <thead>
+                        <tr>
+                            <th scope="col">Start Date</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>January</td>
+                            <td>Online</td>
+                            <td>Open &nbsp;<a href="#">Apply</a></td>
+                        </tr>
+                        <tr>
+                            <td>March</td>
+                            <td>Online</td>
+                            <td>Open &nbsp;<a href="#">Apply</a></td>
+                        </tr>
+                        <tr>
+                            <td>June</td>
+                            <td>Online</td>
+                            <td>Open &nbsp;<a href="#">Apply</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row justify-content-between align-items-center my-4">
+                <div class="col-md-8">
+                    <p>Question ?</p>
+                    <p class="little-description">Talk with our admissions team – they’re here to help.</p>
+                </div>
+                <div class="col-md-4">
+                    <a href="#contact" class="btn btn-secondary float-right">Schedule a chat</a>
                 </div>
             </div>
         </div>
@@ -949,7 +1036,269 @@
 
     <!-- END ADMISSION SECTION -->
 
-    <section style="height: 1000px;"></section>
+    <!-- START TUITION SECTION -->
+
+    <section class="tuition" id="tuition">
+        <div class="container">
+            <div class="row mb-5 justify-content-start">
+                <div class="col-md-12">
+                    <p class="text-uppercase top-text text-light">Tuition, Financing & Scholarships</p>
+                    <h2 class="pb-3 text-light">Find the right finance plan for you</h2>
+                    <p class="little-description text-light">Our payment plan is designed for everyone to get onboard,
+                        payment is broken down to two different time frames: Administration Fee (during the signing of
+                        the contract) and Post-Job Placement Fee (after you have successfully gotten a job of your
+                        choice in the Software Development industry).</p>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-md-5">
+                    <p><small>Administration Fee</small></p>
+                    <h2><sup>$</sup>1000</h2>
+                    <p>($300 for 4 Months for total of $1200 / $200 discount if paid all at once)</p>
+                </div>
+                <div class="col-md-6">
+                    <p><small>Post-Job Placement Fee</small></p>
+                    <h2><sup>$</sup>8500 <small>or 10% of Annual Income Pre-Tax</small></h2>
+                    <p>($300 for 4 Months for total of $1200 / $200 discount if paid all at once)</p>
+                </div>
+            </div>
+            <div class="row my-5 py-5">
+                <div class="col-md-12">
+                    <h3 class="text-center pb-3">Enrollment Account Type</h3>
+                    <p>We have two types of account during your enrollment process. No Payment is required if you just
+                        want to give our process a try and see if this is for you, Pick Trial Run Enrollment during
+                        signup.</p>
+                </div>
+            </div>
+            <div class="row bg-light py-5">
+                <div class="col-md-6 my-3 px-5">
+                    <h4 class="text-dark text-center font-weight-light">TRIAL RUN Enrollment</h4>
+                    <ul class="list-group py-4">
+                        <li>14 days of limited site access</li>
+                        <li>4 live classes to join</li>
+                        <li>NO need to sign a contract</li>
+                        <li>NO payment or credit card needed</li>
+                        <li>Limited Access to Video Library</li>
+                        <li>Easy conversion to Paid Enrollment Plan (after trial ends)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 my-3 px-5">
+                    <h4 class="text-dark text-center font-weight-light">FULL ACCESS Enrollment</h4>
+                    <ul class="list-group py-4">
+                        <li>Full Access to the Site</li>
+                        <li>Access to all Live Classes (Even After Graduation)</li>
+                        <li>Repeat classes for the 2nd time</li>
+                        <li>Unlimited Access to all our recorded videos of Previous Classes</li>
+                        <li>Access to Teamwork (Collaboration)</li>
+                        <li>Software Download and Installation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row bg-light my-5 align-items-center p-5">
+                <div class="col-md-8 my-3">
+                    <h4 class="py-3">Scholarships</h4>
+                    <p class="little-description text-dark">We welcome the youngsters with $500 scholarship toward the
+                        Admin Fee that have recently finished a degree in any field within the last 3 months or is in
+                        their last semester to complete their degree and has maintained at least a 3.0 Cumulative GPA.
+                    </p>
+                </div>
+                <div class="col-md-4 my-3">
+                    <a href="#contact" class="btn btn-danger">Inquire About Scholarships</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END TUITION SECTION -->
+
+    <!-- START STUDENT TESTIMONIAL SECTION -->
+
+    <section class="std-testimonial">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h4 class="pb-5">Student Testimonial</h4>
+                    <div class="std-tes-slider owl-carousel owl-theme">
+                        <div class="single-item">
+                            <p class="little-description"><strong>I am grateful</strong>&nbsp; that I came across
+                                ObjectSPY, they helped me get the job of my dreams. Theoretical knowledge from school is
+                                great but the course also focuses on practical knowledge that gave me a better
+                                understanding of what companies would expect from a employee perspective. Thank you for
+                                all your support and giving me the chance for career growth.</p>
+                            <h5>David</h5>
+                            <p><small>(QA Analyst, BOA)</small></p>
+                        </div>
+                        <div class="single-item">
+                            <p class="little-description">There were many instances when we were given the opportunity
+                                to practice most of the technical topics during the live classes, especially while
+                                learning SQL. I was able to grasp the concept really well, and felt comfortable playing
+                                around with the application we were practicing SQL on. This also gave me the confidence
+                                to learn newer material on the language outside of class.</p>
+                            <h5>Kevin</h5>
+                            <p><small>(Business Analyst, Verizon)</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END STUDENT TESTIMONIAL SECTION -->
+
+    <!-- START  FAQ SECTION -->
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="row mb-5 justify-content-start">
+                <div class="col-md-12">
+                    <p class="text-uppercase top-text">FAQ<span></span></p>
+                    <h2 class="pb-3">You have questions; we have answers</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10 my-3">
+                    <ul class="question">
+                        <li>
+                            <p><i class="fas fa-caret-right"></i>&nbsp;What is the schedule for the classes? </p>
+                            <p class="little-description">All our classes are online via webinar, so you can join from
+                                anywhere. Classes are every Saturday and Sundays at 9:30AM Central Standard Time (CST).
+                                You should block you schedule until 2:30pm CST. Some classes may end early.</p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-caret-right"></i>&nbsp; How long is the duration of the class?</p>
+                            <p class="little-description">Our main goal is to transfer a vast amount of knowledge with
+                                the best quality to our students. Depending upon the course, the class length varies. We
+                                estimate that our courses will be completed within 4 months, however, due to holidays it
+                                can extend.</p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-caret-right"></i>&nbsp;What is the class environment like? </p>
+                            <p class="little-description">The courses are not design like school, college or university.
+                                Each of our sessions are recorded and distributed to students. We understand that people
+                                have life and things happen, if you cannot join class, you can watch the record sessions
+                                and schedule 1:1 with mentors in your own free time! We believe in work-hard and
+                                play-hard. Therefore, we give you multiple short breaks during the 4-hour session?</p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-caret-right"></i>&nbsp;What if I miss a class? </p>
+                            <p class="little-description">All classes are recorded. Therefore, if you cannot join class,
+                                you can watch the record sessions and schedule 1:1 with mentors in your own free time!
+                            </p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-caret-right"></i>&nbsp; What do I need for the class? </p>
+                            <p class="little-description">The only thing that you need is a laptop and a smart phone. We
+                                provide our students with all necessary software!</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END  FAQ SECTION -->
+
+    <!-- START CONTACT SECTION -->
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row mb-5 justify-content-start">
+                <div class="col-md-12">
+                    <p class="text-uppercase top-text">Contact<span></span></p>
+                    <h2 class="pb-3">Available Almost 24/7</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="form-content p-5">
+                        <form>
+                            <div class="form-group form-row">
+                                <div class="col-md my-2">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                                </div>
+                                <div class="col-md my-2">
+                                    <label for="email">Your E-mail</label>
+                                    <input type="text" id="email" class="form-control" placeholder="Enter your E-mail">
+                                </div>
+                            </div>
+                            <div class="form-group form-row">
+                                <div class="col-md my-2">
+                                    <label for="phone">Your Phone</label>
+                                    <input type="text" id="phone" class="form-control" placeholder="Phone Number">
+                                </div>
+                                <div class="col-md my-2">
+                                    <label for="subject">Subject</label>
+                                    <select name="subject" id="subject" class="form-control">
+                                        <option value="">What's on your mind ?</option>
+                                        <option value="">Compliments</option>
+                                        <option value="">Suggestions</option>
+                                        <option value="">Others</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group my-4">
+                                <textarea class="form-control w-100" cols="30" rows="9"
+                                    placeholder="Enter Message"></textarea>
+                            </div>
+                            <!-- <div class="form-group my-4">
+                                <label for="captcha">Captcha Code</label>
+                                <input type="text" id="captcha" class="form-control" placeholder="Enter Captcha">
+                            </div> -->
+                            <div class="form-group my-4">
+                                <input type="submit" value="Submit Inquiry" class="btn btn-danger">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END CONTACT SECTION -->
+
+    <!-- START Bottom INFO SECTION -->
+
+    <section class="bottom-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 my-3 p-3">
+                    <h4>View Full Syllabus</h4>
+                    <p class="little-description">Explore our proven curriculum and gain a clearer sense of the program
+                        experience.</p>
+                    <a href="#" class="btn btn-light">Download Syllabus</a>
+                </div>
+                <div class="col-md-4 my-3 p-3">
+                    <h4>Come see us!</h4>
+                    <p class="little-description">Texas Address: <br>3317 Finley RD. STE# 242, Irving, TX 75062</p>
+                    <button class="btn btn-light">(469) 854 9823</button>
+                </div>
+                <div class="col-md-4 my-3 p-3">
+                    <h4>Contact</h4>
+                    <p class="little-description">Have a question about our program that we haven’t answered above?</p>
+                    <a href="#contact" class="btn btn-light">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END BOTTOM INFO SECTION -->
+
+    <!-- START FOOTER SECTION -->
+
+        <footer class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10 text-center">
+                        <p class="text-center">Copyright &copy; 2020 Triage Tech All Rights Reserved.</p>
+                        <h3 class="text-center">TriageTech.co</h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- END FOOTER SECTION -->
+
     <!-- All js plugin -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>

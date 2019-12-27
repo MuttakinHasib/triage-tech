@@ -23,6 +23,9 @@ $(document).ready(function() {
       1000
     );
   });
+
+  // Brand slider
+
   $(".brand-img").owlCarousel({
     items: 1,
     loop: true,
@@ -42,6 +45,28 @@ $(document).ready(function() {
       },
       400: {
         items: 2
+      }
+    }
+  });
+
+  // Student testimonial slider
+
+  $(".std-tes-slider").owlCarousel({
+    items: 1,
+    loop: true,
+    // dots: true,
+    // nav: true,
+    autoplay: true,
+    mouseDrag: true,
+    responsive: {
+      1280: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      320: {
+        items: 1
       }
     }
   });

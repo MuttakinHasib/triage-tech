@@ -139,12 +139,15 @@ section {
     color: #000 !important;
   }
 
-  .nav-item {
-    &:first-child {
-      .nav-link {
-        color: $color-pink !important;
-      }
-    }
+  // .nav-item {
+  //   &:first-child {
+  //     .nav-link {
+  //       color: $color-pink !important;
+  //     }
+  //   }
+  // }
+  .nav-link.active {
+    color: $color-pink !important;
   }
 
   .nav-link {
@@ -416,16 +419,105 @@ header {
 /* ---- Instructors ---- */
 
 .instructor {
-  background: linear-gradient(to right, #05364dda, #05364dd8), url(../img/instructor.jpg);
+  background: linear-gradient(to right, #05364dda, #05364dd8),
+    url(../img/instructor.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
-  p{
+  p {
     color: #fff;
   }
-  h2{
+  h2 {
     color: #f56;
+  }
+}
+
+/* ---- Admission ---- */
+
+.admission {
+  background-color: #f2f6f8;
+}
+
+/* ---- Tuition ---- */
+
+.tuition {
+  background: linear-gradient(135deg, rgba(19, 63, 75, 0.904), rgba(19, 63, 75, 0.897)),
+    url(../img/tuition-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    p{
+      color: #fff;
+    }
+    h2,h3{
+      color: $color-pink;
+    }
+    ul{
+      li{
+        line-height: 40px;
+      }
+    }
+    
+}
+
+/* ---- Student testimonial ---- */
+
+.std-testimonial{
+  background: #fff;
+}
+
+/* ---- FAQ ---- */
+
+.faq{
+  background-color: #f2f6f8;
+  .question{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    p:not(.little-description){
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+      &:hover{
+        color: $color-pink;
+      }
+    }
+    .little-description{
+      margin-left:15px;
+    }
+  }
+}
+
+/* ---- Contact ---- */
+
+.contact{
+  .form-content{
+    transition: all .3s ease-in-out;
+    &:hover{
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+/* ---- Bottom info ---- */
+.bottom-info{
+  // background-color: #05364d;
+  // background: linear-gradient(123deg, #FFFFFF 0%, #00B2FF 100%), linear-gradient(236deg, #BAFF99 0%, #005E64 100%), linear-gradient(180deg, #FFFFFF 0%, #002A5A 100%), linear-gradient(225deg, #0094FF 20%, #BFF4ED 45%, #280F34 45%, #280F34 70%, #FF004E 70%, #E41655 85%, #B30753 85%, #B30753 100%), linear-gradient(135deg, #0E0220 15%, #0E0220 35%, #E40475 35%, #E40475 60%, #48E0E4 60%, #48E0E4 68%, #D7FBF6 68%, #D7FBF6 100%);
+  // background-blend-mode: overlay, overlay, overlay, darken, normal;
+  background: linear-gradient(60deg, #2B2E4A 0%, #2B2E4A 30%, #E84545 calc(30% + 1px), #E84545 60%, #903749 calc(60% + 1px), #903749 70%, #53354A calc(70% + 1px), #53354A 100%);
+  h4,p{
+    color: #fff;
+  }
+}
+
+
+/* ---- Footer ---- */
+
+footer{
+  background: #05364d;
+  p,h3{
+    color: #fff;
   }
 }

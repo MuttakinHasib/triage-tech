@@ -140,7 +140,7 @@ section {
   color: #000 !important;
 }
 
-.header-active .nav-item:first-child .nav-link {
+.header-active .nav-link.active {
   color: #f36 !important;
 }
 
@@ -432,5 +432,90 @@ header nav .nav-link:hover {
 
 .instructor h2 {
   color: #f56;
+}
+
+/* ---- Admission ---- */
+.admission {
+  background-color: #f2f6f8;
+}
+
+/* ---- Tuition ---- */
+.tuition {
+  background: linear-gradient(135deg, rgba(19, 63, 75, 0.904), rgba(19, 63, 75, 0.897)), url(../img/tuition-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.tuition p {
+  color: #fff;
+}
+
+.tuition h2, .tuition h3 {
+  color: #f36;
+}
+
+.tuition ul li {
+  line-height: 40px;
+}
+
+/* ---- Student testimonial ---- */
+.std-testimonial {
+  background: #fff;
+}
+
+/* ---- FAQ ---- */
+.faq {
+  background-color: #f2f6f8;
+}
+
+.faq .question {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.faq .question p:not(.little-description) {
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.faq .question p:not(.little-description):hover {
+  color: #f36;
+}
+
+.faq .question .little-description {
+  margin-left: 15px;
+}
+
+/* ---- Contact ---- */
+.contact .form-content {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.contact .form-content:hover {
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ---- Bottom info ---- */
+.bottom-info {
+  background: linear-gradient(60deg, #2B2E4A 0%, #2B2E4A 30%, #E84545 calc(30% + 1px), #E84545 60%, #903749 calc(60% + 1px), #903749 70%, #53354A calc(70% + 1px), #53354A 100%);
+}
+
+.bottom-info h4, .bottom-info p {
+  color: #fff;
+}
+
+/* ---- Footer ---- */
+footer {
+  background: #05364d;
+}
+
+footer p, footer h3 {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
