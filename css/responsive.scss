@@ -13,7 +13,9 @@
         padding: 10px 20px !important;
         margin-bottom: 10px;
     }
-    .login{
+
+    .login,
+    .sign-up {
         height: auto !important;
     }
 }
@@ -23,6 +25,7 @@
         .curriculum-item {
             flex-direction: column;
             align-items: flex-start !important;
+
             .cur-icon {
                 width: 150px;
                 margin-bottom: 25px;

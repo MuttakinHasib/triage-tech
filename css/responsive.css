@@ -12,7 +12,8 @@
     padding: 10px 20px !important;
     margin-bottom: 10px;
   }
-  .login {
+  .login,
+  .sign-up {
     height: auto !important;
   }
 }
